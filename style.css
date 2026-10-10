@@ -1,0 +1,104 @@
+/* Batters Boxx landing page. Palette is the logo's: navy #002047, red #D31322,
+   cream #FEF5E4. Red fails contrast on navy, so dark bands accent with cream
+   and red is used only as a solid fill carrying cream text. */
+
+:root {
+  --navy-deep: #001730;
+  --navy: #002047;
+  --navy-line: #14355C;
+  --cream: #FEF5E4;
+  --cream-2: #EFE1C7;
+  --red: #D31322;
+  --red-deep: #AC0D1F;
+  --net: #5E6C7E;
+  --ink: #0E1D2E;
+  --display: 'Archivo', 'Arial Black', 'Helvetica Neue', sans-serif;
+  --body: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'DM Mono', ui-monospace, Menlo, monospace;
+  --gut: clamp(1.25rem, 4vw, 3rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 17px/1.6 var(--body); }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+.band--dark :focus-visible, .band--navy :focus-visible, .nav :focus-visible { outline-color: var(--cream); }
+
+.wrap { max-width: 1180px; margin-inline: auto; padding-inline: var(--gut); }
+.skip { position: absolute; left: -9999px; top: 0; z-index: 9; background: var(--red); color: var(--cream); padding: .75rem 1rem; font-weight: 700; }
+.skip:focus { left: 0; }
+
+/* nav */
+.nav { background: var(--navy-deep); color: var(--cream); position: sticky; top: 0; z-index: 5; border-bottom: 1px solid var(--navy-line); }
+.nav__in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .6rem; }
+.nav__logo { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-family: var(--display); font-variation-settings: 'wdth' 118, 'wght' 800; text-transform: uppercase; letter-spacing: .02em; font-size: 1.05rem; }
+.nav__call { font-family: var(--mono); font-size: .9rem; text-decoration: none; border: 1px solid var(--cream-2); padding: .4rem .8rem; border-radius: 3px; white-space: nowrap; }
+.nav__call:hover { background: var(--cream); color: var(--navy-deep); }
+
+/* type */
+.display { font-family: var(--display); font-variation-settings: 'wdth' 118, 'wght' 800; text-transform: uppercase; line-height: .92; letter-spacing: -.012em; margin: 0; }
+h1.display { font-size: clamp(1.6rem, 8.2vw, 4.4rem); }
+h2.display { font-size: clamp(2rem, 5vw, 3.4rem); }
+.mark { color: var(--red); }
+.band--dark .mark { color: var(--cream); background: var(--red); padding: 0 .12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; margin: 0 0 1rem; color: var(--cream-2); }
+.eyebrow--red { color: var(--red-deep); }
+.lede { font-size: 1.15rem; max-width: 52ch; margin: 1.25rem 0 0; }
+.band--dark .lede, .band--navy .lede { color: var(--cream-2); }
+.note { font-size: .9rem; color: var(--cream-2); margin: 1rem 0 0; max-width: 50ch; }
+
+/* bands */
+.band { padding-block: clamp(3.5rem, 8vw, 6rem); }
+.band--dark { background: var(--navy-deep); color: var(--cream); }
+.band--navy { background: var(--navy); color: var(--cream); }
+
+/* buttons */
+.btnrow { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+.btn { display: inline-block; text-decoration: none; font-weight: 700; padding: .85rem 1.4rem; border-radius: 3px; border: 2px solid transparent; transition: transform .15s, background .15s; }
+.btn:hover { transform: translateY(-2px); }
+.btn-red { background: var(--red); color: var(--cream); }
+.btn-red:hover { background: var(--red-deep); }
+.btn-outline { border-color: var(--cream); color: var(--cream); }
+.btn-outline:hover { background: var(--cream); color: var(--navy-deep); }
+.btn-ink { background: var(--ink); color: var(--cream); }
+
+/* hero */
+.hero__grid { display: grid; gap: 2.5rem; align-items: center; }
+.hero__badge { width: min(100%, 380px); justify-self: center; }
+@media (min-width: 860px) {
+  .hero__grid { grid-template-columns: 1.4fr 1fr; }
+  .hero__badge { width: 100%; max-width: 420px; }
+}
+
+/* lanes */
+.lanes { display: grid; gap: 1rem; margin-top: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.lane { background: var(--navy); color: var(--cream); padding: 1.5rem; border-radius: 3px; border-top: 6px solid var(--red); }
+.lane h3 { font-family: var(--display); font-variation-settings: 'wdth' 118, 'wght' 800; text-transform: uppercase; font-size: 1.8rem; margin: .35rem 0 .5rem; line-height: 1; }
+.lane p { margin: 0; color: var(--cream-2); }
+.lane__tag { font-family: var(--mono); font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: var(--cream-2); }
+
+/* coaches */
+.coaches { display: grid; gap: 1.25rem; margin-top: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.coach { background: var(--navy-deep); border: 1px solid var(--navy-line); border-radius: 3px; overflow: hidden; display: flex; flex-direction: column; }
+.coach img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 25%; }
+.coach__body { padding: 1.25rem; }
+.coach h3 { font-family: var(--display); font-variation-settings: 'wdth' 112, 'wght' 750; text-transform: uppercase; margin: 0; font-size: 1.35rem; }
+.coach__role { font-family: var(--mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--cream-2); margin: .3rem 0 .8rem; }
+.coach p:last-child { margin: 0; color: var(--cream-2); font-size: .97rem; }
+
+/* split sections */
+.split { display: grid; gap: 2.5rem; }
+@media (min-width: 860px) { .split { grid-template-columns: 1fr 1fr; align-items: center; } }
+.facts { list-style: none; margin: 0; padding: 0; display: grid; gap: .9rem; }
+.facts li { padding: 1rem 1.2rem; background: #fff; border-left: 5px solid var(--red); border-radius: 3px; }
+.facts--dark li { background: var(--navy); color: var(--cream-2); border-left-color: var(--cream); }
+.facts--dark strong { color: var(--cream); }
+.hours { font-size: 1.15rem; margin: 0; max-width: 40ch; }
+
+/* footer */
+.foot { background: var(--navy-deep); color: var(--cream-2); padding-block: 2.5rem; text-align: center; }
+.foot__in { display: grid; justify-items: center; gap: .5rem; }
+.foot p { margin: 0; }
+.foot__small { font-size: .85rem; color: #9FB0C4; }
