@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8">
 <script>if(localStorage.getItem('bbPreview')!=='89874c201c8d0edf73343f8b8f927581bd12db9c58d040e559e6cb9edfeec316')location.replace('/');</script>
-<meta name="robots" content="noindex">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -10,8 +9,14 @@
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#001730">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Batters Boxx">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>Batters Boxx — batting cages in Newnan, GA</title>
-<meta name="description" content="Three batting lanes in Newnan, by reservation. Book by the half hour, buy an hour package, or rent the whole building for your team.">
+<meta name="description" content="Three batting lanes in Newnan, by reservation. Book by the half hour, join for a cage hour every day, or rent the whole building for your team.">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -22,10 +27,9 @@
     <nav class="nav__links" id="navlinks" aria-label="Main">
       <a href="/#cages">Cages</a>
       <a href="/lessons">Lessons</a>
+      <a href="/coaches">Coaches</a>
       <a href="/clinics">Clinics</a>
       <a href="/memberships">Memberships</a>
-      <a href="/teams">Teams</a>
-      <a href="tel:6788771975">Call to book</a>
       <span data-auth-slot="" style="display:contents"></span>
     </nav>
   </div>
@@ -51,7 +55,7 @@
       </div>
       <p class="lede">Three lanes a few minutes off the square. Book by the half hour, hit until your hands hurt, and get the machine set the way you asked before you walk in.</p>
       <div class="btnrow">
-        <a class="btn btn-red" href="tel:6788771975">Book a cage</a>
+        <a class="btn btn-red" href="tel:6788771975">Book a lesson</a>
         <a class="btn btn-outline" href="/memberships">See memberships</a>
       </div>
       </div>
@@ -69,7 +73,7 @@
       <p class="eyebrow">The tunnels</p>
       <h2 class="display">Stay in<br>your lane.</h2>
       <p class="lede">Two baseball tunnels and a softball tunnel. Tell us the speed you want when you book and the machine will be set before you walk in.</p>
-      <div class="cages" data-cages=""><article class="cage"><p class="cage__no">Baseball tunnel</p><h3 class="cage__name">Leadoff</h3><dl><div class="spec"><dt>Length</dt><dd>70 ft</dd></div><div class="spec"><dt>Machine</dt><dd>3-wheel machine</dd></div><div class="spec"><dt>Speed</dt><dd>40–90 mph</dd></div><div class="spec"><dt>Half hour</dt><dd>$25</dd></div><div class="spec"><dt>Full hour</dt><dd>$40</dd></div></dl></article><article class="cage"><p class="cage__no">Baseball tunnel</p><h3 class="cage__name">Cleanup</h3><dl><div class="spec"><dt>Length</dt><dd>70 ft</dd></div><div class="spec"><dt>Machine</dt><dd>3-wheel machine</dd></div><div class="spec"><dt>Speed</dt><dd>40–90 mph</dd></div><div class="spec"><dt>Half hour</dt><dd>$25</dd></div><div class="spec"><dt>Full hour</dt><dd>$40</dd></div></dl></article><article class="cage"><p class="cage__no">Softball tunnel</p><h3 class="cage__name">Fastpitch</h3><dl><div class="spec"><dt>Length</dt><dd>60 ft</dd></div><div class="spec"><dt>Machine</dt><dd>2-wheel machine</dd></div><div class="spec"><dt>Speed</dt><dd>35–70 mph</dd></div><div class="spec"><dt>Half hour</dt><dd>$25</dd></div><div class="spec"><dt>Full hour</dt><dd>$40</dd></div></dl></article></div>
+      <div class="cages" data-cages=""><article class="cage"><p class="cage__no">Baseball tunnel</p><h3 class="cage__name">Leadoff</h3><dl><div class="spec"><dt>Length</dt><dd>70 ft</dd></div><div class="spec"><dt>Machine</dt><dd>3-wheel machine</dd></div><div class="spec"><dt>Speed</dt><dd>40–90 mph</dd></div><div class="spec"><dt>Half hour</dt><dd>$25</dd></div><div class="spec"><dt>Full hour</dt><dd>$50</dd></div></dl></article><article class="cage"><p class="cage__no">Baseball tunnel</p><h3 class="cage__name">Cleanup</h3><dl><div class="spec"><dt>Length</dt><dd>70 ft</dd></div><div class="spec"><dt>Machine</dt><dd>3-wheel machine</dd></div><div class="spec"><dt>Speed</dt><dd>40–90 mph</dd></div><div class="spec"><dt>Half hour</dt><dd>$25</dd></div><div class="spec"><dt>Full hour</dt><dd>$50</dd></div></dl></article><article class="cage"><p class="cage__no">Softball tunnel</p><h3 class="cage__name">Fastpitch</h3><dl><div class="spec"><dt>Length</dt><dd>60 ft</dd></div><div class="spec"><dt>Machine</dt><dd>2-wheel machine</dd></div><div class="spec"><dt>Speed</dt><dd>35–70 mph</dd></div><div class="spec"><dt>Half hour</dt><dd>$25</dd></div><div class="spec"><dt>Full hour</dt><dd>$50</dd></div></dl></article></div>
     </div>
   </section>
 
@@ -85,15 +89,15 @@
           <a class="btn btn-outline" href="/lessons">Meet the coaches</a>
         </div>
       </div>
-      <ul class="facts" data-lesson-facts=""><li><span>Coaches on staff</span><span>4</span></li><li><span>We teach</span><span>Hitting · Pitching · Infield / outfield</span></li><li><span>Lesson lengths</span><span>30 min · 60 min</span></li><li><span>Hour with a coach</span><span>from $90</span></li><li><span>Cage time</span><span>included</span></li><li><span>Free cancellation</span><span>up to 24 hours before</span></li></ul>
+      <ul class="facts" data-lesson-facts=""><li><span>Coaches on staff</span><span>3</span></li><li><span>We teach</span><span>Hitting · Pitching · Infield / outfield</span></li><li><span>Lesson lengths</span><span>30 min · 60 min</span></li><li><span>Hour with a coach</span><span>from $100</span></li><li><span>Cage time</span><span>included</span></li><li><span>Free cancellation</span><span>up to 24 hours before</span></li></ul>
     </div>
   </section>
   <section class="band band--dark">
     <div class="wrap">
       <p class="eyebrow eyebrow--accent">Memberships</p>
       <h2 class="display">Hit more,<br>pay less.</h2>
-      <p class="lede">Drop in whenever you want, or buy a package of hours. No monthly bill and no season contract.</p>
-      <div class="plans" data-plans=""><article class="plan"><p class="plan__tag">&nbsp;</p><h3 class="plan__name">5-Hour Pack</h3><p class="plan__price">$150</p><p class="plan__per">5 cage-hours · good for 90 days</p><p class="plan__blurb">Five cage hours, $30 an hour. Use them within 90 days.</p><ul class="plan__perks"><li>5 cage hours</li><li>Good for 90 days</li><li>Any kid on the account can use them</li><li>Turn on auto-refill if you want it</li></ul><div class="plan__cta"><a class="btn btn-outline btn-block" href="/memberships#pack5">See what you get</a></div></article><article class="plan plan--pick"><p class="plan__tag">Most families pick this</p><h3 class="plan__name">10-Hour Pack</h3><p class="plan__price">$280</p><p class="plan__per">10 cage-hours · good for 180 days</p><p class="plan__blurb">Ten cage hours at $28 an hour, plus 10% off anything extra.</p><ul class="plan__perks"><li>10 cage hours</li><li>Good for 180 days</li><li>10% off extra cage time</li><li>Turn on auto-refill if you want it</li></ul><div class="plan__cta"><a class="btn btn-red btn-block" href="/memberships#pack10">See what you get</a></div></article><article class="plan"><p class="plan__tag">&nbsp;</p><h3 class="plan__name">20-Hour Pack</h3><p class="plan__price">$520</p><p class="plan__per">20 cage-hours · good for a year</p><p class="plan__blurb">Twenty hours at $26 an hour. Built for a house with more than one hitter.</p><ul class="plan__perks"><li>20 cage hours</li><li>Good for a full year</li><li>15% off extra cage time</li><li>Turn on auto-refill if you want it</li></ul><div class="plan__cta"><a class="btn btn-outline btn-block" href="/memberships#pack20">See what you get</a></div></article></div>
+      <p class="lede">Drop in for $50 an hour, or join and get a cage hour every day. Year-round is the best price. Seasonal stops when your season ends.</p>
+      <div class="plans" data-plans=""><article class="plan"><p class="plan__tag">&nbsp;</p><h3 class="plan__name">Drop-in</h3><p class="plan__price">Pay per visit</p><p class="plan__per">no membership</p><p class="plan__blurb">No membership. $50 an hour for a lane, book any open slot.</p><ul class="plan__perks"><li>$50 an hour, $25 for 30 minutes</li><li>Book up to 30 days out</li></ul><div class="plan__cta"><a class="btn btn-outline btn-block" href="/memberships#dropin">See what you get</a></div></article><article class="plan plan--pick"><p class="plan__tag">Best value</p><h3 class="plan__name">Year-Round</h3><p class="plan__price">$30<small>/mo</small></p><p class="plan__per">1 cage hour a day · 12-month membership</p><p class="plan__blurb">One cage hour every day, all year. $30 a month on a 12-month membership.</p><ul class="plan__perks"><li>1 cage hour a day, every day</li><li>$30 a month, 12-month membership</li><li>Any open lane, book up to 30 days out</li><li>Unused days do not carry over</li></ul><div class="plan__cta"><a class="btn btn-red btn-block" href="/memberships#member-year">See what you get</a></div></article><article class="plan"><p class="plan__tag">&nbsp;</p><h3 class="plan__name">Seasonal</h3><p class="plan__price">$50<small>/mo</small></p><p class="plan__per">1 cage hour a day · month to month</p><p class="plan__blurb">One cage hour every day, month to month. Stop when your season ends.</p><ul class="plan__perks"><li>1 cage hour a day, every day</li><li>$50 a month, no long-term commitment</li><li>Any open lane, book up to 30 days out</li><li>Unused days do not carry over</li></ul><div class="plan__cta"><a class="btn btn-outline btn-block" href="/memberships#member-season">See what you get</a></div></article></div>
       <div class="btnrow"><a class="btn btn-red" href="/memberships">Compare every plan</a></div>
     </div>
   </section>
@@ -106,10 +110,9 @@
         <p class="lede">Teams get the whole building. Coaches reserve the block, split the roster across all three lanes, and run a real practice when the field is soaked.</p>
         <div class="btnrow">
           <a class="btn btn-red" href="tel:6788771975">Call to sign up</a>
-          <a class="btn btn-outline" href="/teams">How team blocks work</a>
         </div>
       </div>
-      <ul class="facts" data-team-facts=""><li><span>What you get</span><span>The whole building, all 3 lanes</span></li><li><span>Block lengths</span><span>60 min · 90 min · 120 min</span></li><li><span>Whole facility</span><span>$150 / hour</span></li><li><span>Team Block</span><span>$1200 / season</span></li><li><span>Book ahead</span><span>up to 30 days</span></li></ul>
+      <ul class="facts" data-team-facts=""><li><span>What you get</span><span>The whole building, all 3 lanes</span></li><li><span>Block lengths</span><span>60 min · 90 min · 120 min</span></li><li><span>Whole facility</span><span>$125 / hour</span></li><li><span>Team Year-Round</span><span>$249 / month, 1 building-hour a week</span></li><li><span>Book ahead</span><span>up to 30 days</span></li></ul>
     </div>
   </section>
 
@@ -120,8 +123,7 @@
         <h2 class="display">Where<br>we are.</h2>
         <p class="lede" data-visit-address="">126 Werz Industrial Blvd, Newnan, GA 30263.</p>
         <div class="btnrow">
-          <a class="btn btn-red" href="tel:6788771975">Call to book</a>
-          <a class="btn btn-ink" data-visit-phone="" href="tel:6788771975">(678) 877-1975</a>
+          <a class="btn btn-red" data-visit-phone="" href="tel:6788771975">(678) 877-1975</a>
         </div>
       </div>
       <div>
@@ -143,11 +145,9 @@
       <div>
         <h4>Book</h4>
         <ul>
-          <li><a href="tel:6788771975">Reserve a cage</a></li>
           <li><a href="tel:6788771975">Book a lesson</a></li>
           <li><a href="/clinics">Weekly clinics</a></li>
           <li><a href="/memberships">Memberships</a></li>
-          <li><a href="/teams">Team rentals</a></li>
           <li></li>
         </ul>
       </div>

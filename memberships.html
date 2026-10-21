@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8">
 <script>if(localStorage.getItem('bbPreview')!=='89874c201c8d0edf73343f8b8f927581bd12db9c58d040e559e6cb9edfeec316')location.replace('/');</script>
-<meta name="robots" content="noindex">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -10,8 +9,14 @@
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#001730">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Batters Boxx">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>Memberships — Batters Boxx</title>
-<meta name="description" content="Hour packages and team blocks for the cages at Batters Boxx.">
+<meta name="description" content="Memberships at Batters Boxx: a cage hour every day for hitters, an hour of the whole building every week for teams.">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -22,10 +27,9 @@
     <nav class="nav__links" id="navlinks" aria-label="Main">
       <a href="/#cages">Cages</a>
       <a href="/lessons">Lessons</a>
+      <a href="/coaches">Coaches</a>
       <a href="/clinics">Clinics</a>
       <a href="/memberships" aria-current="page">Memberships</a>
-      <a href="/teams">Teams</a>
-      <a href="tel:6788771975">Call to book</a>
       <span data-auth-slot="" style="display:contents"></span>
     </nav>
   </div>
@@ -34,8 +38,8 @@
   <section class="band band--dark band--tight">
     <div class="wrap">
       <p class="eyebrow eyebrow--accent">Memberships</p>
-      <h1 class="display">Put hours<br>in the bank.</h1>
-      <p class="lede">Buy a package of hours and book them on the same board as everyone else. No monthly bill. Each package is good for a set number of days from the day it starts, and you can have it refill itself when the hours run out.</p>
+      <h1 class="display">Hit every<br>day.</h1>
+      <p class="lede">A membership gets a hitter one cage hour a day, and a team one hour of the whole building a week. Go year-round for the lowest monthly price, or seasonal and stop when your season ends. Unused time doesn't carry over. Coaching is sold separately: see <a href="/lessons#lesson-packs">lesson packs</a>.</p>
     </div>
   </section>
 
@@ -44,11 +48,7 @@
       <p class="eyebrow">For hitters and families</p>
       <h2 class="display">Individual</h2>
       <p class="flash" data-flash="" hidden=""></p>
-      <label class="check" style="display:flex;gap:.5rem;align-items:center;margin:0 0 1.2rem">
-        <input type="checkbox" data-auto-refill="">
-        <span>Refill automatically. When my hours run out, add the same package and I'll pay at the counter.</span>
-      </label>
-      <div class="plans" data-plans-individual=""><article class="plan" id="dropin"><p class="plan__tag"> </p><h3 class="plan__name">Drop-in</h3><p class="plan__price">Pay per visit</p><p class="plan__per">no package</p><p class="plan__blurb">No membership. Pay per cage, book any open slot.</p><ul class="plan__perks"><li>Book up to 30 days out</li><li>Standard cage rates</li></ul><div class="plan__cta"><a class="btn btn-outline btn-block" href="tel:6788771975">Call to book</a></div></article><article class="plan" id="pack5"><p class="plan__tag"> </p><h3 class="plan__name">5-Hour Pack</h3><p class="plan__price">$150</p><p class="plan__per">5 cage-hours · good for 90 days</p><p class="plan__blurb">Five cage hours, $30 an hour. Use them within 90 days.</p><ul class="plan__perks"><li>5 cage hours</li><li>Good for 90 days</li><li>Any kid on the account can use them</li><li>Turn on auto-refill if you want it</li></ul><div class="plan__cta"><a class="btn btn-red btn-block" href="tel:6788771975">Call to sign up</a></div></article><article class="plan plan--pick" id="pack10"><p class="plan__tag">Most families pick this</p><h3 class="plan__name">10-Hour Pack</h3><p class="plan__price">$280</p><p class="plan__per">10 cage-hours · good for 180 days</p><p class="plan__blurb">Ten cage hours at $28 an hour, plus 10% off anything extra.</p><ul class="plan__perks"><li>10 cage hours</li><li>Good for 180 days</li><li>10% off extra cage time</li><li>Turn on auto-refill if you want it</li></ul><div class="plan__cta"><a class="btn btn-red btn-block" href="tel:6788771975">Call to sign up</a></div></article><article class="plan" id="pack20"><p class="plan__tag"> </p><h3 class="plan__name">20-Hour Pack</h3><p class="plan__price">$520</p><p class="plan__per">20 cage-hours · good for a year</p><p class="plan__blurb">Twenty hours at $26 an hour. Built for a house with more than one hitter.</p><ul class="plan__perks"><li>20 cage hours</li><li>Good for a full year</li><li>15% off extra cage time</li><li>Turn on auto-refill if you want it</li></ul><div class="plan__cta"><a class="btn btn-red btn-block" href="tel:6788771975">Call to sign up</a></div></article></div>
+      <div class="plans" data-plans-individual=""><article class="plan" id="dropin"><p class="plan__tag"> </p><h3 class="plan__name">Drop-in</h3><p class="plan__price">Pay per visit</p><p class="plan__per">no membership</p><p class="plan__blurb">No membership. $50 an hour for a lane, book any open slot.</p><ul class="plan__perks"><li>$50 an hour, $25 for 30 minutes</li><li>Book up to 30 days out</li></ul><div class="plan__cta"><a class="btn btn-outline btn-block" href="tel:6788771975">Call to book</a></div></article><article class="plan plan--pick" id="member-year"><p class="plan__tag">Best value</p><h3 class="plan__name">Year-Round</h3><p class="plan__price">$30<small>/mo</small></p><p class="plan__per">1 cage hour a day · 12-month membership</p><p class="plan__blurb">One cage hour every day, all year. $30 a month on a 12-month membership.</p><ul class="plan__perks"><li>1 cage hour a day, every day</li><li>$30 a month, 12-month membership</li><li>Any open lane, book up to 30 days out</li><li>Unused days do not carry over</li></ul><div class="plan__cta"><a class="btn btn-red btn-block" href="tel:6788771975">Call to sign up</a></div></article><article class="plan" id="member-season"><p class="plan__tag"> </p><h3 class="plan__name">Seasonal</h3><p class="plan__price">$50<small>/mo</small></p><p class="plan__per">1 cage hour a day · month to month</p><p class="plan__blurb">One cage hour every day, month to month. Stop when your season ends.</p><ul class="plan__perks"><li>1 cage hour a day, every day</li><li>$50 a month, no long-term commitment</li><li>Any open lane, book up to 30 days out</li><li>Unused days do not carry over</li></ul><div class="plan__cta"><a class="btn btn-red btn-block" href="tel:6788771975">Call to sign up</a></div></article></div>
     </div>
   </section>
 
@@ -56,14 +56,14 @@
     <div class="wrap">
       <p class="eyebrow eyebrow--accent">For coaches and orgs</p>
       <h2 class="display">Teams</h2>
-      <p class="lede">Team plans need a team account. A team always gets the whole building, so team hours are building-hours: a two-hour practice uses two.</p>
-      <div class="plans" data-plans-team=""><article class="plan" id="teamblock"><p class="plan__tag"> </p><h3 class="plan__name">Team Block</h3><p class="plan__price">$1200</p><p class="plan__per">10 building-hours · good for 180 days</p><p class="plan__blurb">Ten hours of the whole building for your roster, on one invoice. About five weeks of two-hour practices.</p><ul class="plan__perks"><li>10 hours of the whole facility</li><li>All 3 lanes, every time</li><li>Good for 180 days</li><li>Auto-refill available</li><li>One invoice for the team</li></ul><div class="plan__cta"><a class="btn btn-red btn-block" href="tel:6788771975">Call to sign up</a></div></article><article class="plan" id="teamdrop"><p class="plan__tag"> </p><h3 class="plan__name">Team Drop-in</h3><p class="plan__price">Pay per visit</p><p class="plan__per">no package</p><p class="plan__blurb">Rent the whole building when you need it.</p><ul class="plan__perks"><li>The whole facility, all 3 lanes</li><li>Flat hourly rate</li><li>Pay per block</li></ul><div class="plan__cta"><a class="btn btn-outline btn-block" href="tel:6788771975">Call to book</a></div></article></div>
+      <p class="lede">Team plans need a team account. A team always gets the whole building, all 3 lanes, and nobody else books while you're in.</p>
+      <div class="plans" data-plans-team=""><article class="plan" id="teamdrop"><p class="plan__tag"> </p><h3 class="plan__name">Team Drop-in</h3><p class="plan__price">Pay per visit</p><p class="plan__per">no membership</p><p class="plan__blurb">Rent the whole building when you need it, $125 an hour.</p><ul class="plan__perks"><li>The whole facility, all 3 lanes</li><li>$125 an hour</li><li>Pay per block</li></ul><div class="plan__cta"><a class="btn btn-outline btn-block" href="tel:6788771975">Call to book</a></div></article><article class="plan plan--pick" id="team-year"><p class="plan__tag">Best value</p><h3 class="plan__name">Team Year-Round</h3><p class="plan__price">$249<small>/mo</small></p><p class="plan__per">1 building-hour a week · 12-month membership</p><p class="plan__blurb">One hour of the whole building every week, all year. $249 a month on a 12-month membership.</p><ul class="plan__perks"><li>1 hour of the whole facility a week</li><li>All 3 lanes, every time</li><li>$249 a month, 12-month membership</li><li>Unused weeks do not carry over</li></ul><div class="plan__cta"><a class="btn btn-red btn-block" href="tel:6788771975">Call to sign up</a></div></article><article class="plan" id="team-season"><p class="plan__tag"> </p><h3 class="plan__name">Team Seasonal</h3><p class="plan__price">$299<small>/mo</small></p><p class="plan__per">1 building-hour a week · month to month</p><p class="plan__blurb">One hour of the whole building every week, month to month. Stop when your season ends.</p><ul class="plan__perks"><li>1 hour of the whole facility a week</li><li>All 3 lanes, every time</li><li>$299 a month, no long-term commitment</li><li>Unused weeks do not carry over</li></ul><div class="plan__cta"><a class="btn btn-red btn-block" href="tel:6788771975">Call to sign up</a></div></article></div>
     </div>
   </section>
 
   <section class="band band--tight">
     <div class="wrap">
-      <p class="note">Payment is taken at the counter. Choosing a package here sends it to the front desk, and the hours start once you have paid. Nothing is charged online yet. With auto-refill on, the next package is added the moment you book past your balance, and you settle it at the counter on your next visit. You can switch auto-refill off any time from your account.</p>
+      <p class="note">Payment is taken at the counter. Joining here sends your request to the front desk, and the membership starts once you've paid the first month. Nothing is charged online yet. Year-round is a 12-month membership paid monthly. Seasonal runs month to month.</p>
     </div>
   </section>
 </main>
@@ -78,11 +78,9 @@
       <div>
         <h4>Book</h4>
         <ul>
-          <li><a href="tel:6788771975">Reserve a cage</a></li>
           <li><a href="tel:6788771975">Book a lesson</a></li>
           <li><a href="/clinics">Weekly clinics</a></li>
           <li><a href="/memberships">Memberships</a></li>
-          <li><a href="/teams">Team rentals</a></li>
           <li></li>
         </ul>
       </div>

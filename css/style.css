@@ -519,3 +519,6 @@ h3.display { font-size: clamp(1.3rem, 2.4vw, 1.75rem); font-variation-settings: 
 .rolecheck { display: inline-flex; align-items: center; gap: .25rem; font-size: .75rem; white-space: nowrap; }
 .rolecheck input { accent-color: var(--red); margin: 0; }
 .rolecheck input:disabled + span { opacity: .4; }
+
+/* lessons page: a single lesson plus three packs reads as one row on desktop */
+.plans--four { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
